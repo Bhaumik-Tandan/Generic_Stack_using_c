@@ -1,0 +1,5 @@
+*.exe
+*.stackdump
+*.bin
+temp*.*
+.~lock.FINAL450.xlsx#
