@@ -1,4 +1,5 @@
-#include "push_type.h"
+#include "./stack_header/push_type.h"
+#pragma once//restrict double import
 //https://stackoverflow.com/questions/479207/how-to-achieve-function-overloading-in-c
 //https://www.geeksforgeeks.org/_generic-keyword-c/
 #define push(a) _Generic(a, int: pushi__19BIT0292, char*: pushs__19BIT0292,double: pushf__19BIT0292,char:pushc__19BIT0292,float:pushf__19BIT0292)(a)//char and int will be treated similarly
