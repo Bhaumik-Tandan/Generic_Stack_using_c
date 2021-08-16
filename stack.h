@@ -1,3 +1,4 @@
+#include "./stack_header/stack_functions.h"
 #include "./stack_header/push_type.h"
 #pragma once//restrict double import
 //https://stackoverflow.com/questions/479207/how-to-achieve-function-overloading-in-c

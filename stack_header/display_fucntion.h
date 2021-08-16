@@ -1,6 +1,6 @@
-#include "disp_all.h"
 void disp(int i,int f)// 0 f represted represents print without padding
 {
+    #include "disp_all.h"
     typedef void* (* ppt)(void *);//functions will be called based of value of i and f
     ppt fp[4][2];
     fp[0][0]=dispi__19BIT0292;

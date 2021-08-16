@@ -1,3 +1,4 @@
+#include "varibles_decalred.h"//it also contains header files
 #include "display_fucntion.h"// it contains the display function
 void push__19BIT0292(void* a,int v)
 {

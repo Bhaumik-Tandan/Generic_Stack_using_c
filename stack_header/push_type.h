@@ -1,4 +1,3 @@
-#include "stack_functions.h"
 void pushi__19BIT0292(int a)
 {
     push__19BIT0292(a,0);

@@ -1,4 +1,3 @@
-#include "varibles_decalred.h"//it also contains header files
 void dispi__19BIT0292(int i)
 {
     printf("%d",stack__19BIT0292[i]);
