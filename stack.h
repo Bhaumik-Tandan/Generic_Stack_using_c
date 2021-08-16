@@ -13,7 +13,7 @@ void __attribute__ ((constructor)) default_constructor__19BIT0292() //it get cal
     fp__19BIT0292[2]=&display;
 } 
 
-void smenu()
+void menu()
 {
     printf("\n\n\n1)Push\n2)Pop\n3)Top\n4)Display\n");
     printf("\nEnter your choice: ");
