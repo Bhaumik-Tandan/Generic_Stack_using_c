@@ -1,4 +1,4 @@
-void disp(int i,int f)// 0 f represted represents print without padding
+void disp____19BIT0292(int i,int f)// 0 f represted represents print without padding
 {
     #include "disp_all.h"
     typedef void* (* ppt)(void *);//functions will be called based of value of i and f

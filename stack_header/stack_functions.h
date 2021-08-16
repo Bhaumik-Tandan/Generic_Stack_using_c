@@ -1,5 +1,5 @@
 #include "varibles_decalred.h"//it also contains header files
-#include "display_fucntion.h"// it contains the display function
+#include "display_fucntion.h"// it contains the disp____19BIT0292lay function
 void push__19BIT0292(void* a,int v)
 {
     #define t t__19BIT0292
@@ -9,7 +9,7 @@ void push__19BIT0292(void* a,int v)
     d_type__19BIT0292=realloc(d_type__19BIT0292,(t+1)*sizeof(short));
     d_type__19BIT0292[t]=v;
     printf("\n");
-    disp(t,0);
+    disp____19BIT0292(t,0);
     printf(" pushed");
 }
 void* pop()
@@ -20,7 +20,7 @@ void* pop()
     else
     {
         printf("\n");
-        disp(t,0);
+        disp____19BIT0292(t,0);
         printf(" poped");
         stack__19BIT0292=realloc(stack__19BIT0292,t*sizeof(void *));
         d_type__19BIT0292=realloc(d_type__19BIT0292,t*sizeof(short));
@@ -35,7 +35,7 @@ void* top()
     printf("\nStack is empty");
     else{
         printf("\nTop Element is: ");
-       disp(t,0);
+       disp____19BIT0292(t,0);
        return stack__19BIT0292[t];
     }
 }
@@ -48,7 +48,7 @@ void* display()
     }
     printf("\nThe whole stack is\n\n");
     for(int i=t;i>=0;i--)
-    disp(i,1);
+    disp____19BIT0292(i,1);
     printf("|");
     for(int i=0;i<20;i++)
     printf("_");
