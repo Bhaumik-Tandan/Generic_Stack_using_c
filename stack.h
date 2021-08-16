@@ -1,3 +1,4 @@
+#include "./stack_header/varibles_decalred.h"//it also contains header files
 #include "./stack_header/stack_functions.h"
 #include "./stack_header/push_type.h"
 #pragma once//restrict double import
