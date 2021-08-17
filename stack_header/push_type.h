@@ -9,6 +9,7 @@ void push__19BIT0292(void* a,int v)
     printf("\n");
     disp____19BIT0292(t,0);
     printf(" pushed");
+    #undef t
 }
 void pushi__19BIT0292(int a)
 {

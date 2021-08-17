@@ -13,6 +13,7 @@ void* pop()
         d_type__19BIT0292=realloc(d_type__19BIT0292,t*sizeof(short));
         return stack__19BIT0292[t--];
     }
+    #undef t
 }
 
 void* top()
@@ -25,6 +26,7 @@ void* top()
        disp____19BIT0292(t,0);
        return stack__19BIT0292[t];
     }
+    #undef t
 }
 void* display()
 {
@@ -40,5 +42,5 @@ void* display()
     for(int i=0;i<20;i++)
     printf("_");
     printf("|");
-
+    #undef t
 }
