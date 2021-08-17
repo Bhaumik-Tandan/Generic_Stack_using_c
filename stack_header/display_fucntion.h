@@ -1,8 +1,7 @@
-void disp____19BIT0292(int i,int f)// 0 f represted represents print without padding
+void disp____19BIT0292(stack *s,int i,int f)// 0 f represted represents print without padding
 {
     #include "disp_all.h"
-    typedef void* (* ppt)(void *);//functions will be called based of value of i and f
-    ppt fp[4][2];
+    void* (* fp[4][2])(stack *s,void *);//functions will be called based of value of i and f
     fp[0][0]=dispi__19BIT0292;
     fp[0][1]=dispi__19BIT0292_pad;
     fp[1][0]=dispf__19BIT0292;
@@ -11,5 +10,5 @@ void disp____19BIT0292(int i,int f)// 0 f represted represents print without pad
     fp[2][1]=disps__19BIT0292_pad;
     fp[3][0]=dispc__19BIT0292;
     fp[3][1]=dispc__19BIT0292_pad;
-    fp[d_type__19BIT0292[i]][f](i);//as per the data type stored in d_type__19BIT0292 it will call
+    fp[s->d_type__19BIT0292[i]][f](s,i);//as per the data type stored in d_type__19BIT0292 it will call
 }
