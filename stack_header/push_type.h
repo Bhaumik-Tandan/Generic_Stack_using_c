@@ -1,4 +1,4 @@
-void push__19BIT0292(void* a,int v)
+void push__19BIT0292(stack *s,void* a,int v)
 {
     #define t t__19BIT0292
     t++;
@@ -11,19 +11,19 @@ void push__19BIT0292(void* a,int v)
     printf(" pushed");
     #undef t
 }
-void pushi__19BIT0292(int a)
+void pushi__19BIT0292(stack *s,int a)
 {
-    push__19BIT0292(a,0);
+    push__19BIT0292(s,a,0);
 }
-void pushf__19BIT0292(float a)
+void pushf__19BIT0292(stack *s,float a)
 {
-    push__19BIT0292(&a,1);
+    push__19BIT0292(s,&a,1);
 }
-void pushs__19BIT0292(char * a)
+void pushs__19BIT0292(stack *s,char * a)
 {
-    push__19BIT0292(a,2);
+    push__19BIT0292(s,a,2);
 }
-void pushc__19BIT0292(char a)
+void pushc__19BIT0292(stack *s,char a)
 {
-    push__19BIT0292(a,3);
+    push__19BIT0292(s,a,3);
 }
