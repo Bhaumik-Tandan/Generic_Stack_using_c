@@ -315,4 +315,9 @@ stack so anywhere menu is called inside menu function, it is given a return.
 ## 🛠 Skills Used
 C...
 
+## Explore
+https://github.com/Bhaumik-Tandan/Generic_queue_in_c
+https://github.com/Bhaumik-Tandan/Generic_linked_list_in_c
+
+
   
