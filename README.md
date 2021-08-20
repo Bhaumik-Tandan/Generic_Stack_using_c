@@ -187,11 +187,109 @@ Now you can write
 
 
     
-## Tech Stack
 
-**Client:** React, Redux, TailwindCSS
+# Tech 
+### varibles_decalred.h 
+It constains the defination of
+of strcture of stack.
+It also includes the header files:
 
-**Server:** Node, Express
+```
+#include<stdio.h>
+#include<stdlib.h>
+```
+So if the user is using stack.h
+header file so he is not bound to import
+these files.
+He can diretly write code like this:
+
+```
+#include<stack.h>
+
+main()
+{
+    printf("Something");
+}
+```
+And it will work without an error
+
+### disp_all.h
+
+It constains 8 functions 2 functions
+for each datatype to print the output.
+In case when the display function is 
+called to display the whole stack we need
+to create bucket like strcture to print the
+stack, to accomplish this task we call 
+the pad function otherwise we call the normal
+function
+
+### display_fucntion.h
+
+It constains a single function which is called
+everytime we dispaly something, be it push, pop,etc.
+
+Header file disp_all.h is only accesble through this
+function only as it has been imported inside it.
+
+It constains a 2d function pointer in order to elimiate
+if else block, and the functions are called as per 
+the value of f and data type of the element present at
+postion i of the stack.
+
+### push_main.h
+It is main push function which directly pushes
+an element in the stack.
+Value of v tells which data type the element
+belongs to.
+
+This information is usefull which giving output.
+
+### push_type.h
+
+A void pointer can store integers and characters directly,
+whereas in order to store floats and strings we need to store
+their value in a memory blcok and then store their address in the
+void pointer.
+
+To achieve this task we need different functions to treat data
+accordingly before pushing it into the stack.
+
+This header file constains 4 functions for each data type.
+
+### stack_functions.h
+
+It contains other functions of the stack which are diretly
+callable by the user.
+
+## stack.h
+
+All the nessesary header files are included in this file,
+functions in which will be used by the user
+
+It contains the defination of a generic function push
+which passes on to the value of element to be pushed, to
+the respective function as per the datatype.
+
+The s_in function initilises the initial values of the stack
+
+And the menu function displays the menu, and calls the function
+from the function pointer.
+
+If the user opts to push something in the stack thorugh the menu,
+so we need to store it teporarily in a string,
+and latter as per the datatype we need to convert the string.
+
+Here it isassumed that if the user enters an integer, so
+wants it to be treated as integer.
+
+If he enters something with flaoting point so he wants it to be treated 
+as float.
+
+In case he enters a single character he wants to push a character.
+
+In case the user wants to exit we need to roll back to the recursion 
+stack so anywhere menu is called inside menu function, it is given a return.
 
   
 ## 🛠 Skills Used
