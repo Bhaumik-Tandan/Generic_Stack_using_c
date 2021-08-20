@@ -6,6 +6,26 @@ concept of polymorphism in C with the help of void and
 function pointer. It also helps us to understand that  how
 can we create a hetrogeneous array in C.
 
+# Sample Code
+
+```
+#include<stack.h>
+main()
+{
+    stack s;
+    s_in(&s);
+    push(&s,"DSf");
+    push(&s,34);
+    push(&s,(char)'c');
+    menu(&s);
+    push(&s,324.32);
+    float *a=top(&s);
+    pop(&s);
+}
+```
+
+![image](https://user-images.githubusercontent.com/62440699/130262648-66e303a4-16a2-4be5-8239-4a297d816d09.png)
+![image](https://user-images.githubusercontent.com/62440699/130262716-bbe025d3-0325-4208-8c4c-24b36bc1d9d8.png)
 
 
 ## Documentation
